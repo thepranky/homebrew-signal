@@ -1,15 +1,9 @@
-# Deprecated — use the main Signal repo
+# homebrew-signal
 
-This mirror tap is **deprecated**. The Homebrew cask now lives in the main
-[signal](https://github.com/thepranky/signal) repository as `signal-agent`
-(renamed from `signal` to avoid colliding with Signal Messenger).
+Homebrew tap for [Signal](https://github.com/thepranky/signal).
 
-Install from the main repo:
+This repository is synced automatically from the main Signal repo. Do not edit the cask here by hand.
 
 ```bash
-brew untap thepranky/signal 2>/dev/null
-brew tap thepranky/signal https://github.com/thepranky/signal.git
-brew install --cask signal-agent
+brew install --cask thepranky/signal/signal-agent
 ```
-
-Repo owners: delete this repository to complete the single-repo migration.
