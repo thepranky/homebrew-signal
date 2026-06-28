@@ -1,6 +1,6 @@
 cask "signal-agent" do
   version "0.1.16"
-  sha256 "136748ba5d5773763735c65a0eae3f9caa1a92b66ab24d088a56d282eb8dced1"
+  sha256 "e5a6b344d5f7e608da9ac6b9f289169ffc4bcbb51e9fa7604f7c76d5ff5117ee"
 
   url "https://github.com/thepranky/signal/releases/download/v#{version}/Signal-v#{version}.dmg"
   name "Signal"
@@ -8,7 +8,7 @@ cask "signal-agent" do
   homepage "https://github.com/thepranky/signal"
 
   # Signal is ad-hoc signed, not notarized; let Homebrew clear quarantine.
-  auto_updates false
+  auto_updates true
   depends_on macos: :ventura
 
   app "Signal.app"
